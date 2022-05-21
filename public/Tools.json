@@ -1,0 +1,57 @@
+[
+  {
+    "_id": 1,
+    "name": " Strong Drill machine",
+    "img":"https://i.ibb.co/5BqKCS8/download-1.png" ,
+    "shortDescription":"This is a drill machine. This is fine" ,
+    "minOrderQuantity": "20000",
+    "availableQuantity":"1000000" ,
+    "price": "100/P"
+  },
+  {
+    "_id": 1,
+    "name": " Strong Drill machine",
+    "img":"https://i.ibb.co/bPfqpDp/download.png" ,
+    "shortDescription":"This is a drill machine. This is fine" ,
+    "minOrderQuantity": "250000" ,
+    "availableQuantity": "20000000",
+    "price": "150/P"
+  },
+  {
+    "_id": 1,
+    "name": " Strong Drill machine",
+    "img":"https://i.ibb.co/5BqKCS8/download-1.png" ,
+    "shortDescription": "This is a drill machine. This is fine" ,
+    "minOrderQuantity": "20000",
+    "availableQuantity":"2000000" ,
+    "price": "200/P"
+  },
+  {
+    "_id": 1,
+    "name": " Strong Drill machine",
+    "img":"https://i.ibb.co/bPfqpDp/download.png" ,
+    "shortDescription": "This is a drill machine. This is fine" ,
+    "minOrderQuantity":"150000" ,
+    "availableQuantity":"1500000" ,
+    "price":"250/p"
+  },
+  {
+    "_id": 1,
+    "name": " Strong Drill machine",
+    "img":"https://i.ibb.co/5BqKCS8/download-1.png" ,
+    "shortDescription":"This is a drill machine. This is fine" ,
+    "minOrderQuantity":"10000" ,
+    "availableQuantity": "1000000" ,
+    "price":"300/P"
+  },
+  {
+    "_id": 1,
+    "name": " Strong Drill machine",
+    "img":"https://i.ibb.co/bPfqpDp/download.png" ,
+    "shortDescription":"This is a drill machine. This is fine" ,
+    "minOrderQuantity": "5000" ,
+    "availableQuantity": "1500000" ,
+    "price":"300/P"
+  }
+  
+]
