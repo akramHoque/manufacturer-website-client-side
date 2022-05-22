@@ -5,7 +5,6 @@ const Purchase = () => {
   
   const { itemId } = useParams();
   const [item, setItem] = useState({});
-  console.log(item);
   useEffect(() => {
     const url = `http://localhost:5000/purchase/${itemId}`;
     fetch(url)
@@ -19,11 +18,11 @@ const Purchase = () => {
      
      <figure><img src={item?.img}alt="tool" /></figure>
      <div class="card-body">
-       <h2 class="card-title">{item?.name}</h2>
-       <p>{item.shortDescription}</p>
-       <p>Price: $ {item?.price}</p>
-       <p>Available: {item?.availableQuantity}</p>
-       <p>Min Order: {item?.minOrderQuantity}</p>
+       <h2 class="card-title text-2xl font-bold">{item?.name}</h2>
+       <p className="font-bold " >{item.shortDescription}</p>
+       <p className="font-bold">Price: $ {item?.price}</p>
+       <p className="font-bold">Available: {item?.availableQuantity}</p>
+       <p className="font-bold">Min Order: {item?.minOrderQuantity}</p>
      </div>
    </div>
     </div>

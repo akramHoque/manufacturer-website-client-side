@@ -3,53 +3,53 @@
     
     "name": " Strong Drill machine",
     "img":"https://i.ibb.co/5BqKCS8/download-1.png" ,
-    "shortDescription":"This is a drill machine. This is fine" ,
+    "shortDescription":"This is a beautiful and flexible driller. Project engineers use it very much. Available at anywhere" ,
     "minOrderQuantity": "20000",
-    "availableQuantity":"1000000" ,
+    "availableQuantity":"100000" ,
     "price": "100/P"
   },
   {
     
-    "name": " Strong Drill machine",
-    "img":"https://i.ibb.co/bPfqpDp/download.png" ,
-    "shortDescription":"This is a drill machine. This is fine" ,
+    "name": "Japanies Flexible Hammer",
+    "img":"https://i.ibb.co/Dw1St1g/images-1.png" ,
+    "shortDescription":"This is very thin and very strong. Avaiable at all over the world. Shipping charge free for first 25 buyers" ,
     "minOrderQuantity": "250000" ,
-    "availableQuantity": "20000000",
+    "availableQuantity": "2000000",
     "price": "150/P"
   },
   {
     
-    "name": " Strong Drill machine",
-    "img":"https://i.ibb.co/5BqKCS8/download-1.png" ,
-    "shortDescription": "This is a drill machine. This is fine" ,
+    "name": "Flexible Hammer",
+    "img":"https://i.ibb.co/sjDftF7/Claw-Hammer.png" ,
+    "shortDescription": "This one is created by chinise engineer. Goverment approved. Highly Energetic" ,
     "minOrderQuantity": "20000",
-    "availableQuantity":"2000000" ,
+    "availableQuantity":"300000" ,
     "price": "200/P"
   },
   {
     
-    "name": " Strong Drill machine",
-    "img":"https://i.ibb.co/bPfqpDp/download.png" ,
-    "shortDescription": "This is a drill machine. This is fine" ,
+    "name": "Energetic Pump",
+    "img":"https://i.ibb.co/WVnQSss/images-2.png" ,
+    "shortDescription": "Available from supplier day. Using very high motor engine. BRTI approved" ,
     "minOrderQuantity":"150000" ,
-    "availableQuantity":"1500000" ,
+    "availableQuantity":"3500000" ,
     "price":"250/p"
   },
   {
     
-    "name": " Strong Drill machine",
-    "img":"https://i.ibb.co/5BqKCS8/download-1.png" ,
-    "shortDescription":"This is a drill machine. This is fine" ,
+    "name": "Nut Bolt Pins",
+    "img":"https://i.ibb.co/cwnB5Bg/istockphoto-155321159-612x612.png" ,
+    "shortDescription":"Mechanical pins, position is very flexible. Carbon iron mixed nut " ,
     "minOrderQuantity":"10000" ,
-    "availableQuantity": "1000000" ,
+    "availableQuantity": "1500000" ,
     "price":"300/P"
   },
   {
-    "name": " Strong Drill machine",
+    "name": "3D Driller machine",
     "img":"https://i.ibb.co/bPfqpDp/download.png" ,
-    "shortDescription":"This is a drill machine. This is fine" ,
+    "shortDescription":"This is 3D driller machine.Capable to working a good performance, Available at anywhere" ,
     "minOrderQuantity": "5000" ,
-    "availableQuantity": "1500000" ,
+    "availableQuantity": "500000" ,
     "price":"300/P"
   }
   
