@@ -3,11 +3,11 @@ import {  useNavigate } from 'react-router-dom';;
 
 
 const Tool = ({tool}) => {
-  const {_id,name ,img, shortDescription,minOrderQuantity, availableQuantity,price} = tool;
+  const {_id, name ,img, shortDescription,minOrderQuantity, availableQuantity,price} = tool;
   const navigate = useNavigate();
 
   const handlePurchase = id =>{
-    navigate(`/item/${id}`)
+    navigate(`/purchase/${id}`)
    
   }
 

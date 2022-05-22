@@ -20,7 +20,7 @@ function App() {
         
          <Route path="about" element={<About />} />
          <Route path='tools' element= {<Tools></Tools>}></Route>
-         <Route path = '/item/:itemId' element={<Purchase></Purchase>}></Route>
+         <Route path = '/purchase/:itemId' element={<Purchase></Purchase>}></Route>
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
         <Route path='*' element={<NotFound></NotFound>}></Route>
