@@ -1,24 +1,38 @@
 import React from 'react';
+import {  useNavigate } from 'react-router-dom';;
+
 
 const Tool = ({tool}) => {
-  const {name ,img, shortDescription,minOrderQuantity, availableQuantity,price} = tool;
+  const {_id,name ,img, shortDescription,minOrderQuantity, availableQuantity,price} = tool;
+  const navigate = useNavigate();
+
+  const handlePurchase = id =>{
+    navigate(`/item/${id}`)
+   
+  }
+
+  
   return (
     <div class="card lg:max-w-lg bg-base-100 shadow-xl">
     <div class="card-body text-center">
-      <img src={tool.img} alt="" />
-      <h2 class="card-title text-xl font-bold text-warning uppercase">{tool.name}</h2>
-      <p>{tool.shortDescription}</p>
-      <p>Min Order Quantity: {tool.minOrderQuantity}</p>
-      <p>Available Quantity: {tool.availableQuantity}</p>
-      <p className='text-warning'>Price: ${tool.price}</p>
+      <img src={img} alt="" />
+      <h2 class="card-title text-xl font-bold text-warning uppercase">{name}</h2>
+      <p>{shortDescription}</p>
+      <p>Min Order Quantity: {minOrderQuantity}</p>
+      <p>Available Quantity: {availableQuantity}</p>
+      <p className='text-warning'>Price: ${price}</p>
       <div className="card-actions justify-center">
-                    <button
-                    ></button>
-                    <label htmlFor="booking-modal"
-                        className="btn btn-sm btn-secondary text-white bg-gradient-to-r from-secondary to-primary  uppercase">Buy Now
-                        </label>
+        
+                   <button
+                    className='btn btn-accent text-white uppercase' 
+                   onClick={() => handlePurchase(_id)
+    
+                  }
+                   > 
+                   Buy Now</button>
                 </div>
     </div>
+  
   </div>
   );
 };

@@ -1,6 +1,6 @@
 [
   {
-    "_id": 1,
+    
     "name": " Strong Drill machine",
     "img":"https://i.ibb.co/5BqKCS8/download-1.png" ,
     "shortDescription":"This is a drill machine. This is fine" ,
@@ -9,7 +9,7 @@
     "price": "100/P"
   },
   {
-    "_id": 1,
+    
     "name": " Strong Drill machine",
     "img":"https://i.ibb.co/bPfqpDp/download.png" ,
     "shortDescription":"This is a drill machine. This is fine" ,
@@ -18,7 +18,7 @@
     "price": "150/P"
   },
   {
-    "_id": 1,
+    
     "name": " Strong Drill machine",
     "img":"https://i.ibb.co/5BqKCS8/download-1.png" ,
     "shortDescription": "This is a drill machine. This is fine" ,
@@ -27,7 +27,7 @@
     "price": "200/P"
   },
   {
-    "_id": 1,
+    
     "name": " Strong Drill machine",
     "img":"https://i.ibb.co/bPfqpDp/download.png" ,
     "shortDescription": "This is a drill machine. This is fine" ,
@@ -36,7 +36,7 @@
     "price":"250/p"
   },
   {
-    "_id": 1,
+    
     "name": " Strong Drill machine",
     "img":"https://i.ibb.co/5BqKCS8/download-1.png" ,
     "shortDescription":"This is a drill machine. This is fine" ,
@@ -45,7 +45,6 @@
     "price":"300/P"
   },
   {
-    "_id": 1,
     "name": " Strong Drill machine",
     "img":"https://i.ibb.co/bPfqpDp/download.png" ,
     "shortDescription":"This is a drill machine. This is fine" ,
