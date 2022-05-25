@@ -10,12 +10,20 @@ import Tools from './Pages/Home/Tools';
 import Purchase from './Pages/Home/Purchase';
 import NotFound from './Pages/NotFound';
 import RequireAuth from './Pages/Home/RequireAuth';
+import DashBoard from './Pages/Dashboard/Dashboard';
+import MyProfile from './Pages/Dashboard/MyProfile';
+import AddReview from './Pages/Dashboard/AddReview';
+import MyOrders from './Pages/Dashboard/MyOrders';
+import { useState } from 'react';
+import Input from './Pages/Home/Input';
 
 
 function App() {
+
   return (
     <div className='max-w-7xl mx-auto px-12'>
        <Navbar></Navbar>
+      
        <Routes>
          <Route path='/' element= {<Home></Home>}></Route>
         
@@ -26,11 +34,26 @@ function App() {
             <Purchase></Purchase>
           </RequireAuth>
         }></Route>
+
+        <Route path='dashboard' element = {
+          <RequireAuth>
+            <DashBoard></DashBoard>
+          </RequireAuth>
+        }>
+
+        <Route index element = {<MyProfile></MyProfile>}></Route>
+          <Route path='addreview' element = {<AddReview></AddReview>}></Route>
+          <Route path='order' element = {<MyOrders></MyOrders>}></Route>
+        </Route>
+
+
+
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
         <Route path='*' element={<NotFound></NotFound>}></Route>
         
        </Routes>
+      
     </div>
   );
 }
