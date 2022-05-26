@@ -16,6 +16,7 @@ import AddReview from './Pages/Dashboard/AddReview';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import { useState } from 'react';
 import Input from './Pages/Home/Input';
+import Users from './Pages/Dashboard/Users';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <Route index element = {<MyProfile></MyProfile>}></Route>
           <Route path='addreview' element = {<AddReview></AddReview>}></Route>
           <Route path='order' element = {<MyOrders></MyOrders>}></Route>
+          <Route path='users' element = {<Users></Users>}></Route>
         </Route>
 
 

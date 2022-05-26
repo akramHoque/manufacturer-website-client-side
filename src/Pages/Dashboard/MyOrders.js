@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import { useNavigate } from 'react-router-dom';
+import { signOut } from 'firebase/auth';
 
 const MyOrders = () => {
   const [order, setOrder] = useState([]);
   const [user] = useAuthState(auth);
+  const navigate = useNavigate() ;
  
 useEffect(() =>{
  if(user){
@@ -19,14 +22,26 @@ useEffect(() =>{
   
   
   )
-  .then(res => res.json())
-  .then(data => setOrder(data))
+  .then(res =>{
+   
+    if(res.status === 401 ||  res.status === 403 ){
+      signOut(auth);
+      localStorage.removeItem('accessToken') ;
+        navigate('/') ;
+    }
+   
+   return  res.json()
+    })
+  .then(data => {
+    setOrder(data)
+  
+  })
  }
 }, [user])
 
   return (
     <div>
-      <h2 className='text-xl text-red-500 font-semibold'> Orders : {order.length}</h2>
+      <h2 className='text-xl text-red-500 font-semibold'> Orders : {order?.length}</h2>
       <div class="overflow-x-auto">
   <table class="table table-zebra w-full">
     <thead>
@@ -41,7 +56,7 @@ useEffect(() =>{
     </thead>
     <tbody>
      {
-       order.map((item, index) => <tr>
+       order?.map((item, index) => <tr>
         <th>{index + 1}</th>
         <td>{item?.customerName}</td>
         <td>{item?.productName}</td>
