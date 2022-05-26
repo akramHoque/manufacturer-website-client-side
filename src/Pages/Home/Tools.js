@@ -7,7 +7,7 @@ const Tools = () => {
   useEffect(() =>{
     fetch('http://localhost:5000/tool')
     .then(res => res.json())
-    .then(data => setTools(data))
+    .then(data => setTools(data).slice(0, 6))
   }, [])
 
   return (
