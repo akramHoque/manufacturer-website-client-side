@@ -14,9 +14,9 @@ import DashBoard from './Pages/Dashboard/Dashboard';
 import MyProfile from './Pages/Dashboard/MyProfile';
 import AddReview from './Pages/Dashboard/AddReview';
 import MyOrders from './Pages/Dashboard/MyOrders';
-import { useState } from 'react';
-import Input from './Pages/Home/Input';
 import Users from './Pages/Dashboard/Users';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -55,6 +55,7 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
         
        </Routes>
+       <ToastContainer />
       
     </div>
   );
