@@ -27,7 +27,12 @@ const [user] = useAuthState(auth)
         <li><Link to = '/dashboard'>My Profile</Link></li>
         <li><Link to = '/dashboard/addreview'>Add Review</Link></li>
         <li><Link to = '/dashboard/order'>My Orders</Link></li>
-        { admin && <li><Link to = '/dashboard/users'>All Users</Link></li>}
+        { admin && <>
+          <li><Link to = '/dashboard/users'>All Users</Link></li>
+          <li><Link to = '/dashboard/addProduct'>Add Products</Link></li>
+          <li><Link to = '/dashboard/manageProduct'>Manage Products</Link></li>
+        
+        </>}
         
       </ul>
     
