@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import { toast } from 'react-toastify';
 
 const Purchase = () => {
 
@@ -28,13 +29,14 @@ const Purchase = () => {
       address: event.target.address.value,
       phoneNumber: event.target.phone.value,
       quantity: event.target.quantity.value, 
+      price: event.target.price.value
      
     }
+   console.log(order);
+  // if(order.quantity > item?.availableQuantity || order.quantity < item?.minOrderQuantity){
+  //   alert(`avaialable quantity is ${item?.minOrderQuantity}`);
    
-  if(order.quantity > item?.availableQuantity || order.quantity < item?.minOrderQuantity){
-    alert(`avaialable quantity is ${item?.minOrderQuantity}`);
-   
-  }
+  // }
 
     fetch('http://localhost:5000/order', {
       method: 'POST',
@@ -47,6 +49,7 @@ const Purchase = () => {
       .then(res => res.json())
       .then(data => {
         console.log(data);
+        toast.success('your Order is completed');
       })
 
     
@@ -73,6 +76,7 @@ const Purchase = () => {
           <form onSubmit={handlePlaceOrder} className='grid grid-cols-1 gap-3 justify-items-center mt-1'>
             <input type="text" name='product' placeholder='Product Name' class="input input-bordered input-red-500 w-full max-w-xs" />
             <input type="text" name='quantity'  placeholder="Quantity" class="input input-bordered w-full max-w-xs" />
+            <input type="text" name='price'  placeholder="Price" class="input input-bordered w-full max-w-xs" />
             <input type="text" name='name' value={user?.displayName || ''} disabled class="input input-bordered input-red-500 w-full max-w-xs" />
             <input type="email" name='email' value={user?.email || ''} disabled class="input input-bordered input-red-500 w-full max-w-xs" />
             <input type="text" name='address' placeholder="Your Address" class="input input-bordered input-red-500 w-full max-w-xs" />
