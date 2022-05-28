@@ -50,7 +50,7 @@ const [token] = useToken(user || gUser)
     <div className='flex h-screen justify-center items-center'>
     <div className="card w-96 bg-base-100 shadow-xl">
         <div className="card-body">
-            <h2 className="text-center font-bold text-2xl">Sign Up</h2>
+            <h2 className="text-center text-blue-500 font-bold text-2xl">Sign Up</h2>
 
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div  className="form-control w-full max-w-xs">
@@ -135,12 +135,12 @@ const [token] = useToken(user || gUser)
                 <input className='btn w-full max-w-xs' value='Sign Up' type="submit" />
             </form>
 
-            <p><small>Already have an account?</small> <Link className='text-secondary' to='/login'>Please login</Link></p>
+            <p><small>Already have an account?</small> <Link className='text-success' to='/login'>Please login</Link></p>
 
-            <div className="divider">OR</div>
+            <div className="divider">Or</div>
             <button
 
-                className="btn btn-outline"
+                className="btn btn-outline btn-success"
                 onClick={() => signInWithGoogle()}
             >Continue with Google</button>
         </div>

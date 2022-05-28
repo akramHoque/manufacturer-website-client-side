@@ -1,6 +1,6 @@
 # Zenith Manufacturing Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Live website link [https://assignment-12-53a87.firebaseapp.com/](https://assignment-12-53a87.firebaseapp.com/).
 
 # Short description of this website
 - This is a react application.By helping of react we implement a manufacture website.

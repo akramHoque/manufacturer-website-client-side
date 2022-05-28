@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div style={{
     
-  }} className='bg-slate-400 px-10 py-14 '>
+  }} className='bg-slate-400 px-10 py-14 my-10 '>
     <div className='text-center pb-14 text-white'>
       <p className='text-2xl font-bold text-red-500'>
         Contact Us

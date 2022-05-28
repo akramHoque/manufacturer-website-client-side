@@ -45,6 +45,7 @@ function App() {
             <Purchase></Purchase>
           </RequireAuth>
         }></Route>
+        
 
         <Route path='dashboard' element = {
           <RequireAuth>

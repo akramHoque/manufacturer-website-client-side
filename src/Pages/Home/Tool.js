@@ -18,9 +18,9 @@ const Tool = ({tool}) => {
       <img src={img} alt="" />
       <h2 class="card-title text-xl font-bold text-warning uppercase">{name}</h2>
       <p>{shortDescription}</p>
-      <p>Min Order Quantity: {minOrderQuantity}</p>
-      <p>Available Quantity: {availableQuantity}</p>
-      <p className='text-warning'>Price: ${price}</p>
+      <p className='text-gray-700'>Min Order Quantity: {minOrderQuantity}</p>
+      <p  className='text-gray-700 '>Available Quantity: {availableQuantity}</p>
+      <p className='text-red-500 font-bold'>Price: ${price}</p>
       <div className="card-actions justify-center">
         
                    <button

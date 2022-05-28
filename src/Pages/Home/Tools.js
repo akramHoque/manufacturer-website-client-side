@@ -13,7 +13,7 @@ const Tools = () => {
   return (
     <div>
      <div className='text-center'>
-     <h2 className='tex-7xl text-center text-primary font-bold uppercase'>Our Tools</h2>
+     <h2 className='text-3xl text-center text-orange-700 font-bold uppercase my-5 py-5'>Our Tools</h2>
     <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
       {
         tools.map(tool => <Tool

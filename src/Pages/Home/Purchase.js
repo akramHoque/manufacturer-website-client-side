@@ -32,7 +32,12 @@ const Purchase = () => {
       price: event.target.price.value
      
     }
-   console.log(order);
+
+    let error;
+    
+   if(error){
+    error = <p className='text-red-500'><small>{error?.message}</small></p>
+}
   // if(order.quantity > item?.availableQuantity || order.quantity < item?.minOrderQuantity){
   //   alert(`avaialable quantity is ${item?.minOrderQuantity}`);
    
@@ -81,7 +86,8 @@ const Purchase = () => {
             <input type="email" name='email' value={user?.email || ''} disabled class="input input-bordered input-red-500 w-full max-w-xs" />
             <input type="text" name='address' placeholder="Your Address" class="input input-bordered input-red-500 w-full max-w-xs" />
             <input type="text" name='phone' placeholder="Phone Number" class="input input-bordered input-red-500 w-full max-w-xs" />
-            <input type="submit" value='Place Order' class=" btn btn-success w-full max-w-xs" />
+            <input disabled={ error.quantity?.type === 'max' || error.quantity?.type === 'min'} type="submit" value='Place Order' class=" btn btn-success w-full max-w-xs" />
+            {error}
           </form>
 
         </div>
@@ -91,3 +97,4 @@ const Purchase = () => {
 };
 
 export default Purchase;
+

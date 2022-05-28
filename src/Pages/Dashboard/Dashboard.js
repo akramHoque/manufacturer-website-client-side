@@ -16,7 +16,7 @@ const [user] = useAuthState(auth)
     <div class="drawer-content">
       {/* <!-- Page content here --> */}
 
-      <h2 className='text-2xl font-bold text-purple-500'>Dashboard</h2>
+      <h2 className='text-2xl font-bold text-red-500'>Dashboard</h2>
       <Outlet></Outlet>
     
     </div> 
