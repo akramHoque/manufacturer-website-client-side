@@ -8,7 +8,7 @@ import Tools from './Tools';
 const Home = () => {
   return (
     <div>
-      <h2 className='text-center text-5xl text-orange-700 py-5 my-5'>Zenith Manufacturing Website</h2>
+      <h2 className='text-center text-5xl text-orange-700 py-5 my-5'>Zenith Manufacturing Company</h2>
      <Banner></Banner>
      <Tools></Tools>
      <Engineer></Engineer>

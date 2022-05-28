@@ -1,4 +1,4 @@
-# Zenith Manufacturing Website
+# Zenith Manufacturing Company
 
 # Live website link [https://assignment-12-53a87.firebaseapp.com/](https://assignment-12-53a87.firebaseapp.com/).
 
