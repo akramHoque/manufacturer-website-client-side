@@ -17,13 +17,12 @@ const Summery = () => {
                   </div>
               </div>
               <div>
-                  <h4 className='text-2xl font-bold text-gray-500'>100+ Customers</h4>
-                  
+                  <h4 className='text-2xl font-bold text-gray-500'>100+ Customers</h4> 
               </div>
           </div>
       </div>
       <div className='gap-5 my-10 py-10'>
-          <h3 className='text-2xl m-5 p-5  uppercase text-violet-500'>Our Tools</h3>
+          <h3 className='text-2xl m-5 p-5  uppercase text-violet-500'> Tools</h3>
           <div className="flex items-center ">
               <div className="avatar">
                   <div className="w-12 rounded-full ring ring-secondary mx-2 ring-offset-base-100 mr-5">

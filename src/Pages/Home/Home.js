@@ -14,8 +14,6 @@ const Home = () => {
      <Engineer></Engineer>
      <Summery></Summery>
      <Contact></Contact>
-   
-
     </div>
   );
 };
