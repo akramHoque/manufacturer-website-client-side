@@ -7,7 +7,7 @@ import Loading from '../Shared/Loading';
 const AddProducts = () => {
   const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-  const { data: products, isLoading } = useQuery('tools', () => fetch('http://localhost:5000/tool').then(res => res.json()))
+  const { data: products, isLoading } = useQuery('tools', () => fetch('https://rocky-plateau-28765.herokuapp.com/tool').then(res => res.json()))
   const imageStorageKey = '17d5a70c9593f26ba474df8810b6fd6d';
   const onSubmit = async data => {
 
@@ -32,7 +32,7 @@ const AddProducts = () => {
         img: img
       }
 
-      fetch('http://localhost:5000/product',{
+      fetch('https://rocky-plateau-28765.herokuapp.com/product',{
         method: 'POST',
         headers: {
           'content-type': 'application/json',

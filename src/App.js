@@ -3,7 +3,6 @@ import './App.css';
 import Navbar from './Pages/Shared/Navbar';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home';
-import About from './Pages/About/About';
 import Login from './Pages/Home/Login';
 import SignUp from './Pages/Home/SignUp';
 import Tools from './Pages/Home/Tools';
@@ -21,6 +20,9 @@ import AddProducts from './Pages/Dashboard/AddProducts';
 import ManageProducts from './Pages/Dashboard/ManageProducts';
 import ManageOrders from './Pages/Dashboard/ManageOrders';
 import Payment from './Pages/Dashboard/Payment';
+import MyPortfolio from './Pages/MyPortfolio';
+import Footer from './Pages/Shared/Footer';
+import Blogs from './Pages/Blogs';
 
 
 function App() {
@@ -31,8 +33,12 @@ function App() {
       
        <Routes>
          <Route path='/' element= {<Home></Home>}></Route>
+         <Route path='home' element= {<Home></Home>}></Route>
+         <Route path='blog' element= {<Blogs></Blogs>}></Route>
         
-         <Route path="about" element={<About />} />
+         <Route path="portfolio" element={<MyPortfolio></MyPortfolio>} />
+         
+         
          <Route path='tools' element= {<Tools></Tools>}></Route>
          <Route path = 'purchase/:itemId' element={
           <RequireAuth>
@@ -64,6 +70,7 @@ function App() {
         
        </Routes>
        <ToastContainer />
+       <Footer></Footer>
       
     </div>
   );

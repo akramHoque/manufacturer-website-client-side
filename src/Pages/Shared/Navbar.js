@@ -3,7 +3,7 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase.init';
-
+import img from '../../assets/icon/creative-z-letter-logo-DB394EEC64-seeklogo.com (1).png'
 const Navbar = () => {
     const [user, loading, error] = useAuthState(auth);
     const logout = () => {
@@ -11,21 +11,25 @@ const Navbar = () => {
         localStorage.removeItem('accessToken') ;
       };
     const menuItems = <>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/review">Review</Link></li>
-        <li><Link to="/about">About</Link></li>
+    
+        <li><Link to="/home">Home</Link></li>
+       
         <li><Link to="/purchase/:itemId">Purchase</Link></li>
+        
 
 
         {
             user && <li><Link to="/dashboard">Dashboard</Link></li>
         }
-
-
+        <li><Link to="/blog">Blogs</Link></li>
+        <li><Link to="/portfolio">My Portfolio</Link></li>
         <li>{user?<button  className="btn btn-outline btn-error" onClick={logout} >Sign Out</button> :  <Link to="/login">Login</Link>}</li>
+        
     </>
+
+
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-gray-300 my-3">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -35,7 +39,7 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">Manufacturing Website</a>
+                <a className="btn btn-ghost normal-case text-xl"><img src={img} alt="1" /></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

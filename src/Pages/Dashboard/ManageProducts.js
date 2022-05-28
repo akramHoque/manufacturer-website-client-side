@@ -6,7 +6,7 @@ import ManageProductTable from './ManageProductTable';
 
 const ManageProducts = () => {
  const [deleteProduct, setDeleteProduct] = useState(null) ;
-  const { data: items, isLoading, refetch } = useQuery('items', () => fetch('http://localhost:5000/product',{
+  const { data: items, isLoading, refetch } = useQuery('items', () => fetch('https://rocky-plateau-28765.herokuapp.com/product',{
     headers: {
       authorization: `Bearer ${localStorage.getItem('accessToken')}`
     }

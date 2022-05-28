@@ -11,7 +11,7 @@ const Purchase = () => {
 
 
   useEffect(() => {
-    const url = `http://localhost:5000/purchase/${itemId}`;
+    const url = `https://rocky-plateau-28765.herokuapp.com/purchase/${itemId}`;
     fetch(url)
       .then(res => res.json())
       .then(data => setItem(data));
@@ -38,7 +38,7 @@ const Purchase = () => {
    
   // }
 
-    fetch('http://localhost:5000/order', {
+    fetch('https://rocky-plateau-28765.herokuapp.com/order', {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
